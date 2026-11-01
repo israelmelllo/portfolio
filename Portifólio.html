@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Israel Melo · Dados e mini apps sob medida</title>
+<meta name="description" content="Mini apps, dashboards e automações sob medida para pequenos negócios, clínicas, salões, personal trainers e igrejas.">
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--card:#121b2e;--tx:#eaf0fa;--mut:#9fb0c8;--ac:#2ecc9a;--ac2:#7fb8ff;--bd:#22314d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+main{max-width:980px;margin:0 auto;padding:0 18px 60px}
+section{padding:34px 0 6px}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.15;margin:8px 0 12px}
+h2{font-size:22px;margin:0 0 14px}
+h3{font-size:17px;margin:0 0 6px}
+p{margin:0 0 10px}
+.mut{color:var(--mut)}
+.eyebrow{color:var(--ac);font-weight:700;letter-spacing:.06em;font-size:13px;text-transform:uppercase}
+.hero{padding-top:54px}
+.btn{display:inline-block;padding:13px 20px;border-radius:12px;background:var(--ac);color:#04251a;font-weight:700;text-decoration:none;margin:6px 8px 0 0}
+.btn.alt{background:transparent;border:1px solid var(--ac);color:var(--ac)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:18px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tag{font-size:12px;color:var(--ac2);border:1px solid var(--bd);border-radius:999px;padding:3px 10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--card);border:1px solid var(--bd);border-radius:999px;padding:8px 14px;font-size:14px}
+.badge{font-size:11px;color:#f2b66d;border:1px solid #f2b66d;border-radius:999px;padding:2px 8px;margin-left:6px;vertical-align:middle}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.steps .card::before{counter-increment:s;content:counter(s);display:inline-flex;width:30px;height:30px;border-radius:50%;background:var(--ac);color:#04251a;font-weight:700;align-items:center;justify-content:center;margin-bottom:8px}
+html{scroll-behavior:smooth}
+.card{transition:transform .2s,border-color .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);border-color:var(--ac);box-shadow:0 8px 24px rgba(46,204,154,.12)}
+.chip{transition:transform .2s,border-color .2s}.chip:hover{transform:scale(1.06);border-color:var(--ac)}
+.btn{transition:transform .15s,filter .15s}.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+.js .rev{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
+.js .rev.in{opacity:1;transform:none}
+#nicho{display:inline-block;transition:opacity .3s}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.js .rev{opacity:1;transform:none}}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--bd);color:var(--mut);font-size:13px}
+</style>
+</head>
+<body>
+<main>
+
+<section class="hero">
+  <div class="eyebrow" id="cidade"></div>
+  <h1>Mini apps, painéis e automações sob medida para o seu negócio</h1>
+  <p class="mut" style="max-width:640px">Eu transformo planilhas, anotações e processos manuais em ferramentas simples de usar: agenda com lembretes, painéis de resultado, assistentes de atendimento e muito mais. Sem sistema pesado e com custo de manutenção baixo.</p>
+  <p style="font-size:18px;margin:0 0 10px">Ideal para <b id="nicho" style="color:var(--ac)">💇‍♀️ salões de beleza</b></p>
+  <a class="btn" data-wa="Olá! Vi o seu portfólio e gostaria de conversar sobre uma solução para o meu negócio.">💬 Conversar no WhatsApp</a>
+  <a class="btn alt" href="#casos">👀 Ver exemplos</a>
+</section>
+
+<section>
+  <h2>🛠️ O que eu faço</h2>
+  <div class="grid">
+    <div class="card"><h3>📱 Mini apps sob medida</h3><p class="mut">Agendamento, cadastros, controle de clientes e pagamentos, funcionando no celular e com link para compartilhar.</p></div>
+    <div class="card"><h3>📊 Painéis e relatórios</h3><p class="mut">Indicadores claros do seu mês: quanto entrou, quem veio, o que mais vende. Em Power BI ou direto em planilha.</p></div>
+    <div class="card"><h3>🧩 Assistentes de atendimento</h3><p class="mut">Passo a passo para a equipe seguir no balcão: perguntas, regras, valores e orientações em um só lugar.</p></div>
+    <div class="card"><h3>⚙️ Dados e automações</h3><p class="mut">Integração entre ferramentas, rotinas automáticas, modelagem de dados e pipelines (ETL/ELT) para empresas com mais dados.</p></div>
+    <div class="card"><h3>🔧 Manutenção e evolução</h3><p class="mut">Manual de uso, treinamento da equipe, ajustes e novas funções ao longo do tempo, em plano mensal opcional.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>🎯 Para quem</h2>
+  <div class="chips">
+    <span class="chip">💇‍♀️ Salões e estética</span><span class="chip">🏥 Clínicas e consultórios</span><span class="chip">💪 Personal trainers e academias</span>
+    <span class="chip">🎸 Igrejas e bandas</span><span class="chip">🛍️ Pequenos comércios e serviços</span><span class="chip">👥 Equipes internas e processos</span>
+  </div>
+</section>
+
+<section id="casos">
+  <h2>🚀 Exemplos de trabalhos</h2>
+  <div class="grid">
+    <div class="card"><h3>💅 Agenda e painel para salão de beleza</h3>
+      <p class="mut">Agendamento com vários serviços e observações, lembretes no Google Agenda, lista de agendados com status (veio ou cancelou) e painel com valor recebido, serviços mais procurados e formas de pagamento. Inclui calendário de datas comemorativas para divulgação.</p>
+      <div class="tags"><span class="tag">Google Apps Script</span><span class="tag">Planilhas</span><span class="tag">Google Agenda</span><span class="tag">Painel</span></div></div>
+    <div class="card"><h3>🩺 Assistente de atendimento para clínica</h3>
+      <p class="mut">Guia o atendente passo a passo (particular, convênio, retorno), com base de valores pesquisável, busca em todo o conteúdo, acesso por PIN e documentação de manutenção.</p>
+      <div class="tags"><span class="tag">Fluxos de decisão</span><span class="tag">Notion</span><span class="tag">LGPD</span></div></div>
+    <div class="card"><h3>🎵 Detector de tom para músicos <span class="badge">Android</span></h3>
+      <p class="mut">Escuta a música pelo microfone, mostra a nota atual, o tom mais provável e as próximas notas prováveis dentro do campo harmônico.</p>
+      <div class="tags"><span class="tag">Kotlin</span><span class="tag">Processamento de áudio</span></div></div>
+    <div class="card"><h3>🎼 Cifras e setlist para bandas</h3>
+      <p class="mut">Cadastro de músicas e cifras com troca de tom em um toque, setlist compartilhada por link e organização dos ensaios.</p>
+      <div class="tags"><span class="tag">Web</span><span class="tag">Planilhas</span></div></div>
+    <div class="card"><h3>🏋️ Treino do aluno <span class="badge">protótipo</span></h3>
+      <p class="mut">Treino do dia com vídeo de cada exercício, marcação de séries, cronômetro de descanso, registro de carga com gráfico de evolução e resumo para o personal por WhatsApp.</p>
+      <div class="tags"><span class="tag">Web</span><span class="tag">Celular</span></div></div>
+  </div>
+</section>
+
+<section>
+  <h2>🧭 Como funciona</h2>
+  <div class="steps">
+    <div class="card"><h3>💬 Conversa</h3><p class="mut">Entendo como o seu dia a dia funciona e o que está tomando seu tempo.</p></div>
+    <div class="card"><h3>🧪 Protótipo</h3><p class="mut">Você vê uma primeira versão funcionando, antes de decidir qualquer coisa.</p></div>
+    <div class="card"><h3>✅ Ajustes e entrega</h3><p class="mut">Refinamos juntos e eu entrego com manual e treinamento.</p></div>
+    <div class="card"><h3>📈 Evolução</h3><p class="mut">Novas funções e suporte, se você quiser acompanhamento mensal.</p></div>
+  </div>
+  <p class="mut" style="margin-top:12px">Valores sob orçamento, depois de entender o que você precisa.</p>
+</section>
+
+<section>
+  <h2>👨‍💻 Quem faz</h2>
+  <div class="card">
+    <p><b>Israel Melo</b>, engenheiro de dados, com mais de 8 anos em tecnologia e suporte a usuários.</p>
+    <p class="mut">Experiência com modelagem de dados (DW e DM), ETL/ELT, SSIS, Azure SQL, Power BI, AWS (S3, Athena e Glue) e automações. Pós-graduação em Business Intelligence, Big Data e Analytics e MBAs em Gestão de Processos e em Liderança e Gestão de Equipes.</p>
+    <p class="mut">Cuidado com dados: os projetos são desenhados para guardar só o necessário e manter o controle com o dono do negócio, seguindo boas práticas de LGPD.</p>
+  </div>
+</section>
+
+<section>
+  <h2>🤝 Vamos conversar?</h2>
+  <a class="btn" data-wa="Olá! Vi o seu portfólio e gostaria de conversar sobre uma solução para o meu negócio.">💬 Chamar no WhatsApp</a>
+  <a class="btn alt" id="mail">✉️ Enviar e-mail</a>
+</section>
+
+<footer>© <span id="ano"></span> Israel Melo ✨</footer>
+</main>
+<script>
+// ===== EDITE AQUI =====
+const CONFIG = {
+  whatsapp: '5583988084111',            // 55 + DDD + número, só dígitos
+  email: 'jatconsultoria89@gmail.com',
+  cidade: 'Cajazeiras · Paraíba'      // deixe '' para não mostrar
+};
+document.querySelectorAll('[data-wa]').forEach(a => { a.href = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(a.dataset.wa); a.target = '_blank'; a.rel = 'noopener'; });
+document.getElementById('mail').href = 'mailto:' + CONFIG.email;
+document.getElementById('cidade').textContent = CONFIG.cidade ? '📍 ' + CONFIG.cidade : '';
+document.getElementById('ano').textContent = new Date().getFullYear();
+
+// Frase que troca sozinha
+const NICHOS = ['💇‍♀️ salões de beleza', '🏥 clínicas e consultórios', '💪 personal trainers', '🎸 igrejas e bandas', '🛍️ pequenos comércios', '👥 equipes e processos internos'];
+let ni = 0; const el = document.getElementById('nicho');
+setInterval(() => { el.style.opacity = 0; setTimeout(() => { ni = (ni + 1) % NICHOS.length; el.textContent = NICHOS[ni]; el.style.opacity = 1; }, 300); }, 2600);
+
+// Entrada suave dos cartões ao rolar a página
+document.documentElement.classList.add('js');
+const itens = document.querySelectorAll('.card, .chip');
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
+  itens.forEach(x => { x.classList.add('rev'); io.observe(x); });
+}
+</script>
+</body>
+</html>
